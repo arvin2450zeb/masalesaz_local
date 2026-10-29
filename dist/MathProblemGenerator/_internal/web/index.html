@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>مسئله‌ساز ریاضی</title>
+
+<link rel="stylesheet" href="/static/index.css">
+<script src="/static/index.js" defer></script>
+
+
+</head>
+<body>
+
+<header class="header">
+    <a href="/" class="logo">
+        <span class="logo-icon">∑</span>
+        <span>مسئله‌ساز</span>
+    </a>
+
+    <span class="header-badge">نسخه آزمایشی</span>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <div class="hero-label">
+            <span class="status-dot"></span>
+            ابزار هوشمند تولید مسئله
+        </div>
+
+        <h1>
+            تمرین کن،
+            <span>یاد بگیر!</span>
+        </h1>
+
+        <p class="hero-description">
+            با هر بار کلیک، یک مسئله ریاضی جدید بساز و مهارت حل مسئله‌ات را تقویت کن.
+        </p>
+    </section>
+
+    <section class="generator-card">
+
+        <div class="section-heading">
+            <div>
+                <h2>ساخت مسئله جدید</h2>
+                <p>آماده‌ای یک چالش تازه رو حل کنی؟</p>
+            </div>
+
+            <div class="math-icon">∫</div>
+        </div>
+
+        <div class="problem-types">
+            <div class="type-item">
+                <span class="type-icon">🐎</span>
+                <span>اسب و خروس</span>
+            </div>
+
+            <div class="type-item">
+                <span class="type-icon">🐄</span>
+                <span>گاو و هشت‌پا</span>
+            </div>
+
+            <div class="type-item">
+                <span class="type-icon">🐑</span>
+                <span>میمون و گوسفند</span>
+            </div>
+        </div>
+
+        <button id="generate" class="generate-button">
+            <span class="button-icon">✦</span>
+            <span id="button-text">ساخت مسئله جدید</span>
+            <span class="button-arrow">←</span>
+        </button>
+
+        <p class="hint">
+            هر بار کلیک کنی، یک مسئله تصادفی دریافت می‌کنی.
+        </p>
+
+    </section>
+
+    <section id="result-card" class="result-card hidden">
+
+        <div class="result-header">
+            <div class="result-title">
+                <span class="result-icon">✎</span>
+                <h2>مسئله شما</h2>
+            </div>
+            <span id="problem-number" class="problem-number">مسئله جدید</span>
+        </div>
+
+        <div id="problem-text" class="problem-text"></div>
+
+        <div class="answer-section">
+            <button id="answer-toggle" class="answer-button" type="button">
+    <span id="answer-label">نمایش پاسخ</span>
+    <span id="answer-arrow">⌄</span>
+</button>
+
+            <div id="answer-box" class="answer-box hidden">
+                <h3>پاسخ صحیح</h3>
+                <div id="answer-text"></div>
+            </div>
+        </div>
+
+        <button id="next-problem" class="next-button" type="button">
+            مسئله بعدی ←
+        </button>
+
+    </section>
+
+    <div id="error-box" class="error-box hidden" role="alert">
+        <strong>مشکلی پیش اومد!</strong>
+        <p id="error-text"></p>
+        <button id="retry" type="button">تلاش دوباره</button>
+    </div>
+
+    <footer class="footer">
+        <span>مسئله‌ساز ریاضی</span>
+        <span>ساخته‌شده برای یادگیری بهتر</span>
+    </footer>
+
+</main>
+</body>
+</html>
