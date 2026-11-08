@@ -8,7 +8,6 @@ from fastapi.staticfiles import StaticFiles
 
 
 def resource_path(relative_path: str) -> Path:
-    """Find a project resource in development or in a PyInstaller bundle."""
     bundle_dir = getattr(sys, "_MEIPASS", None)
     base_dir = Path(bundle_dir) if bundle_dir else Path(__file__).resolve().parent
     return base_dir / relative_path
